@@ -26,6 +26,7 @@ def add_task(tasks):
     tasks.append(task)
     print(f'Added task: "{task}"')
 
+ # Functions to remove a task
 def remove_task(tasks):
     display_tasks(tasks)
     if tasks:
