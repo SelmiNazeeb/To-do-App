@@ -26,6 +26,19 @@ def add_task(tasks):
     tasks.append(task)
     print(f'Added task: "{task}"')
 
+def remove_task(tasks):
+    display_tasks(tasks)
+    if tasks:
+        try:
+            task_number = int(input("\nEnter the number of the task you want to remove: "))
+            if 1 <= task_number <= len(tasks):
+                removed_task = tasks.pop(task_number - 1)
+                print(f"Task '{removed_task}' has been removed from your list.")
+            else:
+                print("Invalid task number.")
+        except ValueError:
+            print("Please enter a valid number.")
+
 
 # Main function to run the to-do list app
 def main():
