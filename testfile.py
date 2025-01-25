@@ -67,7 +67,7 @@ class TestToDoApp(unittest.TestCase):
             self.assertIn("Search Results:", output)
             self.assertIn("Buy groceries", output)
 
-    @patch('builtins.input', return_value="Dentist")
+    @patch('builtins.input', return_value="Dentis")
     def test_search_task_not_found(self, mock_input):
         """Test searching for a non-existing task."""
         with patch('sys.stdout', new_callable=StringIO) as mock_stdout:
