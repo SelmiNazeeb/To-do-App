@@ -40,6 +40,17 @@ def remove_task(tasks):
         except ValueError:
             print("Please enter a valid number.")
 
+# Functions to search for a task
+def search_task(tasks):
+    keyword = input("Enter a keyword to search for: ").lower()
+    found_tasks = [task for task in tasks if keyword in task.description.lower()]
+    if found_tasks:
+        print("\nSearch Results:")
+        for task in found_tasks:
+            print(f"- {task}")
+    else:
+        print("No tasks found matching that keyword.")
+
 
 # Main function to run the to-do list app
 def main():
