@@ -23,6 +23,31 @@ def add_task(tasks):
     tasks.append(task)
     print(f'Added task: "{task}"')
 
+ # Functions to remove a task
+def remove_task(tasks):
+    display_tasks(tasks)
+    if tasks:
+        try:
+            task_number = int(input("\nEnter the number of the task you want to remove: "))
+            if 1 <= task_number <= len(tasks):
+                removed_task = tasks.pop(task_number - 1)
+                print(f"Task '{removed_task}' has been removed from your list.")
+            else:
+                print("Invalid task number.")
+        except ValueError:
+            print("Please enter a valid number.")
+
+# Functions to search for a task
+def search_task(tasks):
+    keyword = input("Enter a keyword to search for: ").lower()
+    found_tasks = [task for task in tasks if keyword in task.description.lower()]
+    if found_tasks:
+        print("\nSearch Results:")
+        for task in found_tasks:
+            print(f"- {task}")
+    else:
+        print("No tasks found matching that keyword.")
+
 
 # Main function to run the to-do list app
 def main():
