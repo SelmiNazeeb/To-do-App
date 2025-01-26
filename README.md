@@ -13,5 +13,6 @@ Once added, the task is appended to the list and can be viewed or removed later.
 3. Remove Task
 Users can remove tasks by selecting the task number they wish to delete.
 This option will prompt the user to choose a task from the list to delete and confirms the removal.
-4. Exit Application
+4.Search task
+5. Exit Application
 A simple option to exit the application when you're done managing your tasks.
