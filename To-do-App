@@ -3,12 +3,15 @@ import csv
 
 # Function to display the menu
 def display_menu():
-    print("\nTo-Do List")
+    print("\n=====================================")
+    print("             To-Do List")
+    print("=====================================")
     print("1. View Tasks")
     print("2. Add Task")
     print("3. Remove Task")
-    print("4. Search task")
+    print("4. Search Task")
     print("5. Exit")
+    print("=====================================")
 
 
 # Function to view tasks
