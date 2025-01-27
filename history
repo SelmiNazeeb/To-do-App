@@ -1,0 +1,58 @@
+cd To-do-App/
+  444  code To-do-App
+  445  git checkout -b feature
+  446  code To-do-App
+  447  git add .
+  448  git commit -m "new feature added"
+  449  code To-do-App
+  450  git add .
+  451  git commit -m "feature updated"
+  452  git log
+  453  code To-do-App
+  454  git add .
+  455  git commit -m "search feature updated"
+  456  git push -u origin feature
+  457  cd ..
+  458  cd To-do-App/
+  459  code To-do-App
+  460  git branch
+  461  git log --online
+  462  git log --oneline
+  463  git checkout main
+  464  git log --oneline
+  465  git add .
+  466  git commit -m "new updation"
+  467  code To-do-App
+  468  git add .
+  469  git commit -m "Updated with new task"
+  470  git checkout feature
+  471  git rebase
+  472  git rebase main
+  473  git log --oneline
+  474  git checkout main
+  475  git log
+  476  git log --oneline
+  477  git merge feature
+  478  git pull
+  479  git push
+  480  git checkout -b feature-test
+  481  code testfile
+  482  code testfile.py
+  483  git add .
+  484  git commit -m "test code add"
+  485  python testfile.py
+  486  git add .
+  487  git commit -m "test code added"
+  488  git push -u origin feature-test
+  489  git checkout -b bugfix
+  490  code tesfile.py
+  491  code testfile.py
+  492  git add .
+  493  git commit -m "bug fixed"
+  494  git push -u origin feature-test
+  495  git push -u origin bugfix
+  496  git tag -a v1.0 -m  "first version released"
+  497  git log
+  498  cd ..
+  499  cd To-do-App/
+  500  git push --tags
